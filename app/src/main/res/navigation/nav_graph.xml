@@ -9,5 +9,14 @@
         android:id="@+id/indexFragment"
         android:name="com.utad.newComponets.IndexFragment"
         android:label="fragment_index"
-        tools:layout="@layout/fragment_index" />
+        tools:layout="@layout/fragment_index" >
+        <action
+            android:id="@+id/action_indexFragment_to_switchFragment"
+            app:destination="@id/switchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/switchFragment"
+        android:name="com.utad.newComponets.materialComponents.SwitchFragment"
+        android:label="fragment_switch"
+        tools:layout="@layout/fragment_switch" />
 </navigation>

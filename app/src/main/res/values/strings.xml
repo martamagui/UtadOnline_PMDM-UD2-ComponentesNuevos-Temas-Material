@@ -2,5 +2,7 @@
     <string name="app_name">New Components Project</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="swtich_title">Switch sample</string>
+    <string name="switch_title">Switch sample</string>
+    <string name="switch_message_1">Checked</string>
+    <string name="switch_message_2">Unchecked</string>
 </resources>
