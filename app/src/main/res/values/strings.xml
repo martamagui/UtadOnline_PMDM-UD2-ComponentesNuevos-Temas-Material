@@ -5,4 +5,7 @@
     <string name="switch_title">Switch sample</string>
     <string name="switch_message_1">Checked</string>
     <string name="switch_message_2">Unchecked</string>
+    <string name="checkbox_title">CheckBox</string>
+    <string name="checkbox_message_1">Términos y condiciones</string>
+    <string name="button_title">Button</string>
 </resources>

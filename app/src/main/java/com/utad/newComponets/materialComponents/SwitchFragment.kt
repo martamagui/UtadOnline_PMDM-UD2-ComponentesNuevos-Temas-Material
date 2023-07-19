@@ -27,7 +27,8 @@ class SwitchFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         //Cambiar el estado de tu swich:
-        binding.swCheckedMaterial2.isChecked = true
+        binding.swCheckedMaterial2.isChecked = true // Estado-> Checked
+        binding.swCheckedMaterial2.isChecked = false // Estado-> UNChecked
 
         binding.swChecked.setOnCheckedChangeListener { buttonView, isChecked ->
             showSwitchStatus(isChecked)
