@@ -13,10 +13,74 @@
         <action
             android:id="@+id/action_indexFragment_to_switchFragment"
             app:destination="@id/switchFragment" />
+        <action
+            android:id="@+id/action_indexFragment_to_coordinatorAndCollapsingToolbarFragment"
+            app:destination="@id/coordinatorAndCollapsingToolbarFragment" />
+        <action
+            android:id="@+id/action_indexFragment_to_navdrawerFragment"
+            app:destination="@id/navdrawerFragment" />
+        <action
+            android:id="@+id/action_indexFragment_to_scrollsFragment"
+            app:destination="@id/scrollsFragment" />
+        <action
+            android:id="@+id/action_indexFragment_to_toolbarFragment"
+            app:destination="@id/toolbarFragment" />
+        <action
+            android:id="@+id/action_indexFragment_to_checkBoxFragment"
+            app:destination="@id/checkBoxFragment" />
+        <action
+            android:id="@+id/action_indexFragment_to_buttonsFragment"
+            app:destination="@id/buttonsFragment" />
+        <action
+            android:id="@+id/action_indexFragment_to_cardViewFragment"
+            app:destination="@id/cardViewFragment" />
+        <action
+            android:id="@+id/action_indexFragment_to_bottomNavigationFragment"
+            app:destination="@id/bottomNavigationFragment" />
     </fragment>
     <fragment
         android:id="@+id/switchFragment"
         android:name="com.utad.newComponets.materialComponents.SwitchFragment"
         android:label="fragment_switch"
         tools:layout="@layout/fragment_switch" />
+    <fragment
+        android:id="@+id/bottomNavigationFragment"
+        android:name="com.utad.newComponets.materialComponents.BottomNavigationFragment"
+        android:label="fragment_bottom_navigation"
+        tools:layout="@layout/fragment_bottom_navigation" />
+    <fragment
+        android:id="@+id/cardViewFragment"
+        android:name="com.utad.newComponets.materialComponents.CardViewFragment"
+        android:label="fragment_card_view"
+        tools:layout="@layout/fragment_card_view" />
+    <fragment
+        android:id="@+id/buttonsFragment"
+        android:name="com.utad.newComponets.materialComponents.ButtonsFragment"
+        android:label="fragment_buttons"
+        tools:layout="@layout/fragment_buttons" />
+    <fragment
+        android:id="@+id/checkBoxFragment"
+        android:name="com.utad.newComponets.materialComponents.CheckBoxFragment"
+        android:label="fragment_check_box"
+        tools:layout="@layout/fragment_check_box" />
+    <fragment
+        android:id="@+id/coordinatorAndCollapsingToolbarFragment"
+        android:name="com.utad.newComponets.materialComponents.CoordinatorAndCollapsingToolbarFragment"
+        android:label="fragment_coordinator_and_collapsing_toolbar"
+        tools:layout="@layout/fragment_coordinator_and_collapsing_toolbar" />
+    <fragment
+        android:id="@+id/navdrawerFragment"
+        android:name="com.utad.newComponets.materialComponents.NavdrawerFragment"
+        android:label="fragment_navdrawer"
+        tools:layout="@layout/fragment_navdrawer" />
+    <fragment
+        android:id="@+id/scrollsFragment"
+        android:name="com.utad.newComponets.materialComponents.ScrollsFragment"
+        android:label="fragment_scrolls"
+        tools:layout="@layout/fragment_scrolls" />
+    <fragment
+        android:id="@+id/toolbarFragment"
+        android:name="com.utad.newComponets.materialComponents.ToolbarFragment"
+        android:label="fragment_toolbar"
+        tools:layout="@layout/fragment_toolbar" />
 </navigation>
