@@ -35,9 +35,6 @@
             android:id="@+id/action_indexFragment_to_cardViewFragment"
             app:destination="@id/cardViewFragment" />
         <action
-            android:id="@+id/action_indexFragment_to_bottomNavigationFragment"
-            app:destination="@id/bottomNavigationFragment" />
-        <action
             android:id="@+id/action_indexFragment_to_fabFragment"
             app:destination="@id/fabFragment" />
     </fragment>
@@ -46,11 +43,6 @@
         android:name="com.utad.newComponets.components.SwitchFragment"
         android:label="fragment_switch"
         tools:layout="@layout/fragment_switch" />
-    <fragment
-        android:id="@+id/bottomNavigationFragment"
-        android:name="com.utad.newComponets.components.BottomNavigationFragment"
-        android:label="fragment_bottom_navigation"
-        tools:layout="@layout/fragment_bottom_navigation" />
     <fragment
         android:id="@+id/cardViewFragment"
         android:name="com.utad.newComponets.components.CardViewFragment"
