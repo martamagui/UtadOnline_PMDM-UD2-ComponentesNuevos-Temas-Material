@@ -8,7 +8,7 @@
     android:background="@color/white"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".materialComponents.SwitchFragment">
+    tools:context=".components.SwitchFragment">
 
     <com.google.android.material.materialswitch.MaterialSwitch
         android:id="@+id/sw_unchecked"

@@ -25,5 +25,8 @@
         Nullam ultricies elit sit amet sapien euismod, in iaculis odio lobortis. Suspendisse ut nibh quam. Nunc placerat in justo ut viverra. Vestibulum condimentum imperdiet quam in commodo. Vivamus posuere est finibus, facilisis risus et, eleifend quam. In euismod, est in feugiat bibendum, nulla erat sodales mauris, ac mattis purus libero a est. Aenean ut sollicitudin nisl, volutpat dapibus lectus. Vivamus consequat risus nec nunc molestie, quis pharetra neque scelerisque. </string>
     <string name="button_fab_extended">Extendido</string>
     <string name="beagle_title">Beagle</string>
+    <string name="scroll_view">ScrollView</string>
+    <string name="horizontal_scroll_view">HorizontalScrollView</string>
+    <string name="nested_scroll_view">NestedScrollView</string>
 
 </resources>

@@ -1,4 +1,4 @@
-package com.utad.newComponets.materialComponents
+package com.utad.newComponets.components
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

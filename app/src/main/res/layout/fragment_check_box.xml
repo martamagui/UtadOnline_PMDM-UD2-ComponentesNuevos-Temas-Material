@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@color/white"
     android:padding="24dp"
-    tools:context=".materialComponents.CheckBoxFragment">
+    tools:context=".components.CheckBoxFragment">
 
     <CheckBox
         android:id="@+id/cb_terms_and_conditions_2"
