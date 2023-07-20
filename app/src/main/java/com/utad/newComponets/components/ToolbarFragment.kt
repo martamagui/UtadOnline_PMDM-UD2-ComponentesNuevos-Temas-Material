@@ -27,6 +27,7 @@ class ToolbarFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
         binding.toolbar.setOnMenuItemClickListener { item->
             when(item.itemId){
                 R.id.save->{
@@ -45,5 +46,7 @@ class ToolbarFragment : Fragment() {
             //Vuelve hacia atrás
             findNavController().popBackStack()
         }
+
+        //Con la toolbar de Material sería igual
     }
 }
