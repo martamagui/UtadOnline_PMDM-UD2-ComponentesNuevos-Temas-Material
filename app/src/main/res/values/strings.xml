@@ -8,4 +8,12 @@
     <string name="checkbox_title">CheckBox</string>
     <string name="checkbox_message_1">Términos y condiciones</string>
     <string name="button_title">Button</string>
+    <string name="button_title_index">Material Buttons</string>
+    <string name="button_fab_index">Floating Action Buttons</string>
+    <string name="button_card_view_index">CardViews</string>
+    <string name="button_scroll_index">Scrolls</string>
+    <string name="button_toolbar_index">Toolbar</string>
+    <string name="button_coordinator_layout_index">CoordinatorLayout &amp; CollapsingToolbar</string>
+    <string name="button_bottom_navigation_index">BottomNavigation</string>
+    <string name="button_navdrawer_index">Navdrawer</string>
 </resources>
