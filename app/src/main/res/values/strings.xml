@@ -24,5 +24,6 @@
         Vivamus turpis odio, vestibulum dapibus ante molestie, suscipit imperdiet dui. Quisque vel purus vitae justo suscipit rhoncus. Pellentesque laoreet ipsum quis urna ultricies, id maximus nunc varius. Suspendisse non pulvinar velit, sed blandit quam. Ut id justo at lacus mollis faucibus sed sed lectus. Praesent tristique eros eros, a ultrices diam condimentum id. Suspendisse eu vulputate lorem. In feugiat neque nec ullamcorper sagittis. Morbi scelerisque nibh eget ante ultrices hendrerit. Integer molestie nec nunc eu tincidunt. Ut faucibus erat ex, ultrices iaculis ante dapibus eu. Sed vitae ligula vel ex malesuada tempor.
         Nullam ultricies elit sit amet sapien euismod, in iaculis odio lobortis. Suspendisse ut nibh quam. Nunc placerat in justo ut viverra. Vestibulum condimentum imperdiet quam in commodo. Vivamus posuere est finibus, facilisis risus et, eleifend quam. In euismod, est in feugiat bibendum, nulla erat sodales mauris, ac mattis purus libero a est. Aenean ut sollicitudin nisl, volutpat dapibus lectus. Vivamus consequat risus nec nunc molestie, quis pharetra neque scelerisque. </string>
     <string name="button_fab_extended">Extendido</string>
+    <string name="beagle_title">Beagle</string>
 
 </resources>
