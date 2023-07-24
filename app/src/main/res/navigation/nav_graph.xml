@@ -34,6 +34,9 @@
         <action
             android:id="@+id/action_indexFragment_to_fabFragment"
             app:destination="@id/fabFragment" />
+        <action
+            android:id="@+id/action_indexFragment_to_recyclerViewFragment"
+            app:destination="@id/recyclerViewFragment" />
     </fragment>
     <fragment
         android:id="@+id/switchFragment"
@@ -100,4 +103,9 @@
         android:name="com.utad.newComponets.components.scrollViews.ScrollViewFragment"
         android:label="fragment_scroll_view"
         tools:layout="@layout/fragment_scroll_view" />
+    <fragment
+        android:id="@+id/recyclerViewFragment"
+        android:name="com.utad.newComponets.recyclerView.RecyclerViewFragment"
+        android:label="fragment_recycler_view"
+        tools:layout="@layout/fragment_recycler_view" />
 </navigation>
