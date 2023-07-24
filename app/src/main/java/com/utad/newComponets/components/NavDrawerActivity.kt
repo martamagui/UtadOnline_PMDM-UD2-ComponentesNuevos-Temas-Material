@@ -22,39 +22,38 @@ class NavDrawerActivity : AppCompatActivity() {
         _binding = ActivityNavDrawerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         val drawerLayout: DrawerLayout = binding.dlContent
         val navViewDrawer: NavigationView = binding.nvDrawer
-
 
         toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
         toggle.syncState()
 
+        //Es necesario poner esto aunque no tengasmos Toolbar, si no no funciona
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        //Detectamos el click de los elementos del menú con "setNavigationItemSelectedListener"
         navViewDrawer.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.firstOptionFragment -> {
-                    Toast.makeText(this, "${item.title}", Toast.LENGTH_SHORT).show()
-                    drawerLayout.close()
-                }
-
-                R.id.secondOptionFragment -> {
-                    Toast.makeText(this, "${item.title}", Toast.LENGTH_SHORT).show()
-                    drawerLayout.close()
-                }
-
-                R.id.thirdOptionFragment -> {
-                    Toast.makeText(this, "${item.title}", Toast.LENGTH_SHORT).show()
-                    drawerLayout.close()
-                }
+                R.id.firstOptionFragment -> showItemClicked(item, drawerLayout)
+                R.id.secondOptionFragment -> showItemClicked(item, drawerLayout)
+                R.id.thirdOptionFragment -> showItemClicked(item, drawerLayout)
             }
             return@setNavigationItemSelectedListener true
         }
     }
 
+    //Para que la toolbar detecte que hemos pulsado el navigationIcon
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         toggle.onOptionsItemSelected(item)
         return super.onOptionsItemSelected(item)
     }
 
+    private fun showItemClicked(
+        item: MenuItem,
+        drawerLayout: DrawerLayout
+    ) {
+        Toast.makeText(this, "${item.title}", Toast.LENGTH_SHORT).show()
+        drawerLayout.close()
+    }
 }
