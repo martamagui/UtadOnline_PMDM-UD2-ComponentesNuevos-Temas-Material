@@ -17,9 +17,6 @@
             android:id="@+id/action_indexFragment_to_coordinatorAndCollapsingToolbarFragment"
             app:destination="@id/coordinatorAndCollapsingToolbarFragment" />
         <action
-            android:id="@+id/action_indexFragment_to_navdrawerFragment"
-            app:destination="@id/navdrawerFragment" />
-        <action
             android:id="@+id/action_indexFragment_to_scrollsFragment"
             app:destination="@id/scrollsFragment" />
         <action
@@ -63,11 +60,6 @@
         android:name="com.utad.newComponets.components.CoordinatorAndCollapsingToolbarFragment"
         android:label="fragment_coordinator_and_collapsing_toolbar"
         tools:layout="@layout/fragment_coordinator_and_collapsing_toolbar" />
-    <fragment
-        android:id="@+id/navdrawerFragment"
-        android:name="com.utad.newComponets.components.NavdrawerFragment"
-        android:label="fragment_navdrawer"
-        tools:layout="@layout/fragment_navdrawer" />
     <fragment
         android:id="@+id/scrollsFragment"
         android:name="com.utad.newComponets.components.ScrollsFragment"

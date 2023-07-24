@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.utad.newComponets.components.BottomNavigationActivity
+import com.utad.newComponets.components.NavDrawerActivity
 import com.utad.newComponets.databinding.FragmentIndexBinding
 
 
@@ -36,12 +37,12 @@ class IndexFragment : Fragment() {
         binding.btnGoToToolbar.setOnClickListener { goToToolbarFragment() }
         binding.btnGoToCoordinator.setOnClickListener { goToCoordinatorFragment() }
         binding.btnGoToBottomNavigation.setOnClickListener { goToBottomNavigationFragment() }
-        binding.btnGoToNavDrawer.setOnClickListener { goToNavdrawerFragment() }
+        binding.btnGoToNavDrawer.setOnClickListener { goToNavdrawer() }
     }
 
-    private fun goToNavdrawerFragment() {
-        val action = IndexFragmentDirections.actionIndexFragmentToNavdrawerFragment()
-        findNavController().navigate(action)
+    private fun goToNavdrawer() {
+        val intent = Intent(requireContext(), NavDrawerActivity::class.java)
+        startActivity(intent)
     }
 
     private fun goToBottomNavigationFragment() {

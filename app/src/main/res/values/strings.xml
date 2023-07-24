@@ -40,4 +40,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <string name="open">Abrir</string>
+    <string name="close">Cerrar</string>
+
 </resources>
