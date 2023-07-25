@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_indexFragment_to_recyclerViewFragment"
             app:destination="@id/recyclerViewFragment" />
+        <action
+            android:id="@+id/action_indexFragment_to_recyclerViewWithListAdapterFragment"
+            app:destination="@id/recyclerViewWithListAdapterFragment" />
     </fragment>
     <fragment
         android:id="@+id/switchFragment"
@@ -108,4 +111,9 @@
         android:name="com.utad.newComponets.recyclerView.RecyclerViewFragment"
         android:label="fragment_recycler_view"
         tools:layout="@layout/fragment_recycler_view" />
+    <fragment
+        android:id="@+id/recyclerViewWithListAdapterFragment"
+        android:name="com.utad.newComponets.recyclerView.RecyclerViewWithListAdapterFragment"
+        android:label="fragment_recycler_view_with_list_adapter"
+        tools:layout="@layout/fragment_recycler_view_with_list_adapter" />
 </navigation>

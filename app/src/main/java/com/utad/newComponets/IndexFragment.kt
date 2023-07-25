@@ -39,9 +39,14 @@ class IndexFragment : Fragment() {
         binding.btnGoToBottomNavigation.setOnClickListener { goToBottomNavigationFragment() }
         binding.btnGoToNavDrawer.setOnClickListener { goToNavdrawer() }
         binding.btnGoToRecyclerView.setOnClickListener { goToRecyclerView() }
+        binding.btnGoToRecyclerViewListAdapter.setOnClickListener { goToRecyclerViewListAdapter() }
     }
 
-    private fun goToRecyclerView() {
+    private fun goToRecyclerViewListAdapter() {
+        val action = IndexFragmentDirections.actionIndexFragmentToRecyclerViewWithListAdapterFragment()
+        findNavController().navigate(action)
+    }
+   private fun goToRecyclerView() {
         val action = IndexFragmentDirections.actionIndexFragmentToRecyclerViewFragment()
         findNavController().navigate(action)
     }
