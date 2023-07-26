@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.utad.newComponets.databinding.ItemDogBinding
 
 class DogRecyclerViewAdapter(
-    private var dogList: List<Dog>,
+    var dogList: MutableList<Dog>,
     private val onClick: (Dog) -> Unit
 ) : RecyclerView.Adapter<DogRecyclerViewAdapter.DogViewHolder>() {
 
@@ -29,7 +29,7 @@ class DogRecyclerViewAdapter(
         holder.binding.tvType.text = dog.type
     }
 
-    fun updateList( dogList: List<Dog>){
+    fun updateList( dogList: MutableList<Dog>){
         this.dogList = dogList
     }
 

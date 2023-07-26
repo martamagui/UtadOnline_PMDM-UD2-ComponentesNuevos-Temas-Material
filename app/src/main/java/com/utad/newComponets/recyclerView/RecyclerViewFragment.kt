@@ -36,15 +36,44 @@ class RecyclerViewFragment : Fragment() {
 
         //Inicializamos el adapter
         val list = getDogList()
-        adapter = DogRecyclerViewAdapter(list) { sayMyName(it) }
+        adapter = DogRecyclerViewAdapter(list) {
+            sayMyName(it)
+            //addMoreItems()
+            //removeItem(it)
+            insertItem()
+        }
         binding.rvDogs.adapter = adapter
+
+
+    }
+
+    private fun infoRecyclerView() {
+        //Métodos para avisar de cambios en las listas de la RecyclerView
+        //Avisa de que hemos borrado el elemento de la posición indicada
+        adapter.notifyItemRemoved(0)
+        //Avisa que hemos añadido un elemento en la posición indicada
+        adapter.notifyItemInserted(0)
+        //Avisa de que hemos cambiado alguna propiedad del elemento y necesita ser re-pintado
+        adapter.notifyItemChanged(0)
+        //Avisa de que un elemento cambió de posición
+        adapter.notifyItemMoved(0, 1)
+        //Avisa de que hay un nuevo set de datos
+        adapter.notifyDataSetChanged()
+    }
+
+    private fun removeItem(dog: Dog) {
+        val postion = adapter.dogList.indexOf(dog)
+        adapter.dogList.remove(dog)
+        adapter.notifyItemRemoved(postion)
     }
 
     private fun sayMyName(dog: Dog) {
         Toast.makeText(requireContext(), dog.name, Toast.LENGTH_SHORT).show()
+    }
 
+    private fun addMoreItems() {
         val newList = mutableListOf<Dog>()
-        newList.addAll(getDogList())
+        newList.addAll(adapter.dogList)
         newList.add(
             Dog(
                 "Cookie",
@@ -65,8 +94,19 @@ class RecyclerViewFragment : Fragment() {
         adapter.notifyDataSetChanged()
     }
 
-    private fun getDogList(): List<Dog> {
-        return listOf(
+    private fun insertItem() {
+        adapter.dogList.add(
+            2, Dog(
+                "Danerys",
+                "Corgi",
+                resources.getDrawable(R.drawable.pic_corgi, requireActivity().theme)
+            )
+        )
+        adapter.notifyItemInserted(2)
+    }
+
+    private fun getDogList(): MutableList<Dog> {
+        return mutableListOf(
             Dog(
                 "Pipo",
                 "Corgi",
