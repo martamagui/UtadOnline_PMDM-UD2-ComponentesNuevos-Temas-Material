@@ -7,7 +7,7 @@
     tools:context=".components.ContextMenuActivity">
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cv_context_menu"
+        android:id="@+id/cv_dog_menu"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
