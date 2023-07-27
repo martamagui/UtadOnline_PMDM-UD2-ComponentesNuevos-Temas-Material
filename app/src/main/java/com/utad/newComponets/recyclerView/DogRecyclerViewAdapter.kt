@@ -10,13 +10,11 @@ class DogRecyclerViewAdapter(
     private val onClick: (Dog) -> Unit
 ) : RecyclerView.Adapter<DogRecyclerViewAdapter.DogViewHolder>() {
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DogViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val binding = ItemDogBinding.inflate(inflater, parent, false)
         return DogViewHolder(binding)
     }
-
 
     override fun onBindViewHolder(holder: DogViewHolder, position: Int) {
         //Obtenemos el item de la lita que toca pintar en esta posición
@@ -29,7 +27,7 @@ class DogRecyclerViewAdapter(
         holder.binding.tvType.text = dog.type
     }
 
-    fun updateList( dogList: MutableList<Dog>){
+    fun updateList(dogList: MutableList<Dog>) {
         this.dogList = dogList
     }
 

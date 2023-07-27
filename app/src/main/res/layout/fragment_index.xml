@@ -358,6 +358,35 @@
                     android:text="@string/button_recycler_view_list_adapter_index" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcv_context_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/tv_context_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/button_recycler_view_list_adapter_index"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <Button
+                    android:id="@+id/btn_go_to_context_menu"
+                    android:layout_width="match_parent"
+                    android:focusable="false"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_recycler_view_list_adapter_index" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
 </ScrollView>
