@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.utad.newComponets.components.BottomNavigationActivity
+import com.utad.newComponets.components.ContextMenuActivity
 import com.utad.newComponets.components.NavDrawerActivity
 import com.utad.newComponets.databinding.FragmentIndexBinding
 
@@ -31,7 +32,7 @@ class IndexFragment : Fragment() {
         binding.btnGoToSwitch.setOnClickListener { goToSwitchFragment() }
         binding.btnGoToCheckbox.setOnClickListener { goToCheckBox() }
         binding.btnGoToButtons.setOnClickListener { goToButtonsFragment() }
-        binding.btnGoToFab.setOnClickListener { gotToFabFragment() } 
+        binding.btnGoToFab.setOnClickListener { gotToFabFragment() }
         binding.btnGoToCardView.setOnClickListener { goToCardViewFragment() }
         binding.btnGoToScrolls.setOnClickListener { goToScrollFragment() }
         binding.btnGoToToolbar.setOnClickListener { goToToolbarFragment() }
@@ -44,16 +45,17 @@ class IndexFragment : Fragment() {
     }
 
     private fun goToContextMenu() {
-        val action = IndexFragmentDirections.actionIndexFragmentToContextMenuFragment()
-        findNavController().navigate(action)
+        val intent = Intent(requireContext(), ContextMenuActivity::class.java)
+        startActivity(intent)
     }
 
     private fun goToRecyclerViewListAdapter() {
-        val action = IndexFragmentDirections.actionIndexFragmentToRecyclerViewWithListAdapterFragment()
+        val action =
+            IndexFragmentDirections.actionIndexFragmentToRecyclerViewWithListAdapterFragment()
         findNavController().navigate(action)
     }
 
-   private fun goToRecyclerView() {
+    private fun goToRecyclerView() {
         val action = IndexFragmentDirections.actionIndexFragmentToRecyclerViewFragment()
         findNavController().navigate(action)
     }
@@ -69,7 +71,8 @@ class IndexFragment : Fragment() {
     }
 
     private fun goToCoordinatorFragment() {
-        val action = IndexFragmentDirections.actionIndexFragmentToCoordinatorAndCollapsingToolbarFragment()
+        val action =
+            IndexFragmentDirections.actionIndexFragmentToCoordinatorAndCollapsingToolbarFragment()
         findNavController().navigate(action)
     }
 
