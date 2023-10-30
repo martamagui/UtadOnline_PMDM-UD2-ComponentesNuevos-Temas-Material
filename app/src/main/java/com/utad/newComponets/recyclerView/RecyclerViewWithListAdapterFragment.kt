@@ -69,7 +69,7 @@ class RecyclerViewWithListAdapterFragment : Fragment() {
                 "Nuevo",
                 resources.getDrawable(R.drawable.pic_corgi, requireActivity().theme)
             )
-            dogList = adapter.currentList
+            dogList = adapter.currentList.toMutableList()
             dogList.add(newDog)
 
             //Actualizar los elementos de la lista
